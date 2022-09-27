@@ -134,13 +134,15 @@ body {
   align-items: center;
   justify-content: center;
   gap: 25px;
-  z-index: 1190;
+  z-index: 1100;
+  opacity: 0;
 }
 
 .icons {
   font-size: 25px;
   margin-bottom: 30px;
   cursor: pointer;
+  color: white;
 }
 
 .space-overlay {

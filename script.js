@@ -1,22 +1,14 @@
 (() => {
   let animation = gsap.timeline();
 
-  animation.to(".curtain-text-text", {
-    top: "25%",
-    duration: 2,
-  });
+  // animation.to(".curtain-text-text", {
+  //   top: "25%",
+  //   // duration: 0.5,
+  // });
 
-  animation.to(".item1", {
-    opacity: 1,
-    duration: 0.5,
-  });
-  animation.to(".item2", {
-    opacity: 1,
-    duration: 0.5,
-  });
   animation.to(".item3", {
     opacity: 1,
-    duration: 0.5,
+    duration: 1,
   });
 
   animation.to(".image-curtain", {
@@ -25,6 +17,7 @@
     duration: 1,
     scale: 4,
     opacity: 0,
+    display: "none",
   });
 
   animation.to(
@@ -51,6 +44,7 @@
       // display: "none",
       duration: 9,
       delay: 1.5,
+      display: "none",
     },
     "-=0.56"
   );
@@ -72,6 +66,14 @@
       color: "#54aedc",
     },
     "-=9"
+  );
+  animation.to(
+    ".social-div",
+    {
+      opacity: 1,
+      duration: 0.5,
+    },
+    "-=5"
   );
 
   gsap
