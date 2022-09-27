@@ -25,11 +25,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  scale: 1;
-  transform-origin: 50% 40%;
+  scale: 2;
+  /* transform-origin: 50% 40%; */
   box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset;
   z-index: 10;
-  transform-origin: 25% 40%;
+  /* transform-origin: 25% 40%; */
 }
 
 .image-curtain {
@@ -37,7 +37,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1b1711;
-  z-index: 11;
+  z-index: 111;
   top: 0;
   display: flex;
   align-items: center;
@@ -95,10 +95,18 @@ body {
 
 .nsu-tech-fest {
   color: #fff;
-  font-family: "comming-soon";
-  position: absolute;
-  transform: translateY(300px);
+  font-family: "grave";
+  letter-spacing: 5px;
+  color: #6daccc;
+  /* transform: translateY(00px); */
   font-size: 30px;
+  position: absolute;
+  color: #fff;
+  bottom: -700px;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .comming-soon-inside {

@@ -31,24 +31,46 @@
     ".imageImg",
     {
       top: "0vh",
-      opacity: "scale(0.5)",
       ease: "power4.easeInOut",
-      scale: 4.5,
-      opacity: 0,
+      scale: 0.5,
+      // opacity: 0,
       // display: "none",
-      duration: 6,
+      duration: 1,
       // delay: 0.5,
     },
-    "-=1.3"
+    "-=1"
+  );
+  animation.to(
+    ".imageImg",
+    {
+      top: "0vh",
+      opacity: "scale(0.5)",
+      ease: "power4.easeInOut",
+      scale: 4,
+      opacity: 0,
+      // display: "none",
+      duration: 9,
+      delay: 1.5,
+    },
+    "-=0.56"
   );
 
   animation.to(
     ".nsu-tech-fest",
     {
-      transform: "translateY(100px)",
+      bottom: "60px",
+      duration: 2,
+    },
+    "-=12"
+  );
+
+  animation.to(
+    ".nsu-tech-fest",
+    {
+      transform: "translateY(-500px)",
       duration: 3,
     },
-    "-=5.3"
+    "-=9"
   );
 
   gsap
