@@ -29,6 +29,7 @@ body {
   transform-origin: 50% 40%;
   box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset;
   z-index: 10;
+  transform-origin: 25% 40%;
 }
 
 .image-curtain {
@@ -46,6 +47,7 @@ body {
   color: #fff;
   opacity: 1;
   background-position: center;
+  transform-origin: 25% 40%;
 }
 
 .curtain-text {
@@ -86,8 +88,17 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.nsu-tech-fest {
+  color: #fff;
+  font-family: "comming-soon";
+  position: absolute;
+  transform: translateY(300px);
+  font-size: 30px;
 }
 
 .comming-soon-inside {
@@ -123,13 +134,6 @@ body {
 .loader {
   position: relative;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  /* margin-bottom: -40px; */
-  /* border-image: linear-gradient(#7766ce, #312b4d, #9b4fa0);
-  border-width: 30px;
-  border-style: solid; */
-  margin-left: 12.2%;
   margin-top: -30px;
 }
 
@@ -146,77 +150,10 @@ body {
   position: relative;
   width: 550px;
   height: 550px;
-  /* border: 6px solid #eaeef0; */
-  /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 1),
-    8px 8px 25px rgba(0, 0, 0, 0.15); */
   border-radius: 50%;
   opacity: 1;
   overflow: hidden;
   border-image: linear-gradient(#7766ce, #312b4d, #9b4fa0);
   border-width: 30px;
   border-style: solid;
-}
-
-.loader span:before {
-  content: "";
-  position: absolute;
-  inset: 70px;
-  background-color: rgba(91, 44, 161, 0.275);
-  /* box-shadow: -8px -8px 25px rgba(255, 255, 255, 1),
-    8px 8px 25px rgba(0, 0, 0, 0.15), inset 3px 3px 10px rgba(0, 0, 0, 0.1),
-    inset -1px -1px 15px rgba(255, 255, 255, 1); */
-  /* border: 2px solid #eaeef0; */
-  /* border: 2px solid linear-gradient(#7766ce, #312b4d, #9b4fa0); */
-  border-radius: 50%;
-  z-index: 1;
-  border-image: linear-gradient(#7766ce, #312b4d, #9b4fa0);
-  border-width: 30px;
-  border-style: solid;
-}
-
-.loader span i {
-  position: absolute;
-  inset: 0;
-  /* background: linear-gradient(#7766ce, #312b4d, #9b4fa0); */
-  border-radius: 50%;
-  filter: blur(5px);
-  animation: animate 1s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.text {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  animation: animateText 25s linear infinite;
-  color: #000;
-}
-
-@keyframes animateText {
-  0% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.text b {
-  position: absolute;
-  left: 50%;
-  display: block;
-  transform-origin: 0 170px;
-  font-weight: normal;
-  font-size: 1.4em;
 }

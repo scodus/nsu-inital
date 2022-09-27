@@ -19,17 +19,13 @@
     duration: 0.5,
   });
 
-  animation.to(
-    ".image-curtain",
-    {
-      // left: "-100%",
-      ease: "circle.easeOut",
-      duration: 0.5,
-      scale: 4,
-      opacity: 0,
-    },
-    "+=2"
-  );
+  animation.to(".image-curtain", {
+    // left: "-100%",
+    ease: "circle.easeOut",
+    duration: 1,
+    scale: 4,
+    opacity: 0,
+  });
 
   animation.to(
     ".imageImg",
@@ -43,7 +39,16 @@
       duration: 6,
       // delay: 0.5,
     },
-    "-=0.6"
+    "-=1.3"
+  );
+
+  animation.to(
+    ".nsu-tech-fest",
+    {
+      transform: "translateY(100px)",
+      duration: 3,
+    },
+    "-=5.3"
   );
 
   gsap
