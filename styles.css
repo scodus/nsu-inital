@@ -98,12 +98,14 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: "comming-soon";
+  /* font-family: "comming-soon"; */
+  font-family: "grave";
   font-size: 100px;
+  z-index: 10;
 }
 
 .space-overlay {
-  opacity: 0.5;
+  opacity: 0.8;
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -219,4 +221,45 @@ body {
   transform-origin: 0 170px;
   font-weight: normal;
   font-size: 1.4em;
+}
+
+@media screen and (max-width: 400px) {
+  .loader {
+    width: 250px;
+  }
+
+  .comming-soon-inside {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .loader {
+    margin: 0 auto;
+  }
+  .imageImg {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .image-curtain {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-size: cover;
+    background-position: right;
+  }
+
+  .loader-title {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .comming-soon-inside {
+    font-size: 24px;
+  }
 }
