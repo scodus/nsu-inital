@@ -69,6 +69,7 @@
     {
       transform: "translateY(-450px)",
       duration: 3,
+      color: "#54aedc",
     },
     "-=9"
   );

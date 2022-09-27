@@ -28,7 +28,7 @@ body {
   scale: 2;
   /* transform-origin: 50% 40%; */
   box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset;
-  z-index: 10;
+  z-index: 1150;
   /* transform-origin: 25% 40%; */
 }
 
@@ -37,7 +37,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1b1711;
-  z-index: 1000;
+  z-index: 1200;
   top: 0;
   display: flex;
   align-items: center;
@@ -100,16 +100,16 @@ body {
   color: #f5f5f5;
   font-family: "grave";
   letter-spacing: 5px;
-  color: #6daccc;
+  color: #eb3572;
   /* transform: translateY(00px); */
-  font-size: 30px;
+  font-size: 50px;
   position: absolute;
-  color: #fff;
   bottom: -700px;
-  z-index: 100;
+  z-index: 1170;
   left: 0;
   right: 0;
   text-align: center;
+  margin-left: 40px;
 }
 
 .comming-soon-inside {
@@ -122,7 +122,25 @@ body {
   color: #f5f5f5;
   /* font-family: "comming-soon"; */
   font-family: "grave";
-  font-size: 100px;
+  font-size: 35px;
+}
+
+.social-div {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  z-index: 1190;
+}
+
+.icons {
+  font-size: 25px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .space-overlay {
@@ -146,8 +164,8 @@ body {
 .loader {
   position: relative;
   display: flex;
-  margin-top: -30px;
   z-index: 300;
+  align-items: center;
 }
 
 .loader-title {
@@ -235,20 +253,64 @@ body {
   font-size: 1.4em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 1445px) {
   .loader {
-    width: 250px;
+    margin-left: 10%;
+    margin-top: -4vh;
   }
 
-  .comming-soon-inside {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+  .svg-loader {
+    width: 500px;
+    height: 500px;
+  }
+
+  .loader-title {
+    margin-left: 40%;
   }
 }
-@media screen and (max-width: 1440px) {
+
+@media screen and (min-width: 1600px) {
   .loader {
-    margin: 0 auto;
+    margin-left: 13%;
+    margin-top: -4vh;
+  }
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1445px) {
+  .loader {
+    margin-left: -2vw;
+    margin-top: -4vh;
+  }
+
+  .svg-loader {
+    width: 400px;
+    height: 400px;
+  }
+  .imageImg {
+    margin-left: 0px;
+    margin-top: 0px;
+    z-index: 54;
+  }
+
+  .image-curtain {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    background-size: cover;
+    background-position: right;
+    padding-left: 205px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1030px) {
+  .loader {
+    margin-left: -8vw;
+    margin-top: -4vh;
+  }
+
+  .svg-loader {
+    width: 300px;
+    height: 300px;
   }
   .imageImg {
     margin-left: 0px;
@@ -256,12 +318,12 @@ body {
   }
 
   .image-curtain {
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0;
     background-size: cover;
     background-position: right;
+    padding-left: 205px;
   }
 
   .loader-title {
@@ -269,9 +331,88 @@ body {
     text-align: center;
     font-size: 30px;
     margin-top: 10px;
+    margin-left: 80px;
   }
 
   .comming-soon-inside {
     font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .image-curtain {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    background-size: cover;
+    background-position: left;
+    padding-left: 205px;
+  }
+
+  .loader {
+    margin-left: -35vw;
+    margin-top: 5vh;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .image-curtain {
+    background-position: left;
+  }
+
+  .loader {
+    flex-direction: column;
+    margin-left: -32vw;
+    margin-top: 3vh;
+  }
+
+  .svg-loader {
+    width: 350px;
+    height: 350px;
+    margin: 0;
+  }
+
+  .loader-title {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+
+  .nsu-tech-fest {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image-curtain {
+    background-position: right;
+  }
+  .loader {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+  }
+
+  .svg-loader {
+    width: 250px;
+    height: 250px;
+  }
+
+  .comming-soon-inside {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .loader-title {
+    font-size: 32px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 40px;
   }
 }
