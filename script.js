@@ -67,7 +67,7 @@
   animation.to(
     ".nsu-tech-fest",
     {
-      transform: "translateY(-500px)",
+      transform: "translateY(-450px)",
       duration: 3,
     },
     "-=9"
