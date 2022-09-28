@@ -109,7 +109,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 .comming-soon-inside {
@@ -123,6 +123,7 @@ body {
   /* font-family: "comming-soon"; */
   font-family: "grave";
   font-size: 35px;
+  margin-top: 10rem;
 }
 
 .social-div {
@@ -409,6 +410,7 @@ body {
   .comming-soon-inside {
     margin: 0 auto;
     text-align: center;
+    font-size: 25px;
   }
 
   .loader-title {
@@ -416,5 +418,11 @@ body {
     text-align: center;
     margin-left: 0px;
     margin-top: 40px;
+  }
+  .nsu-tech-fest {
+    font-size: 30px;
+  }
+  .image {
+    height: 95vh;
   }
 }
