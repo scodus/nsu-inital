@@ -44,6 +44,7 @@
           top: "0vh",
           opacity: "scale(0.5)",
           ease: "power4.easeInOut",
+          zIndex: 30,
           scale: 4,
           opacity: 0,
           // display: "none",
