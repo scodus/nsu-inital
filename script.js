@@ -13,7 +13,7 @@
 
       animation.to(".item3", {
         opacity: 1,
-        duration: 1.5,
+        duration: 3,
       });
 
       animation.to(".image-curtain", {
