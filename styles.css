@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @font-face {
   font-family: "comming-soon";
   src: url("assets/fonts/Netron-demo-1.otf");
@@ -30,6 +32,7 @@ body {
   box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset;
   z-index: 1150;
   /* transform-origin: 25% 40%; */
+  /* display: none; */
 }
 
 .image-curtain {
@@ -48,6 +51,8 @@ body {
   opacity: 1;
   background-position: center;
   transform-origin: 25% 40%;
+  /* display: none; */
+  /* -------------------------------------------------- HERE */
 }
 
 .curtain-text {
@@ -96,6 +101,44 @@ body {
   z-index: 6;
 }
 
+.comming-soon-inside {
+  color: #000;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f5;
+  /* font-family: "comming-soon"; */
+  font-family: "grave";
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.nsu-details {
+  width: 450px;
+  height: 150px;
+  /* background-color: #efeede; */
+  z-index: 100;
+  margin-top: 250px;
+  padding: 20px;
+  color: #fff;
+  opacity: 0;
+}
+
+.venue-div {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+.venue-div-lower {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
 .nsu-tech-fest {
   color: #f5f5f5;
   font-family: "grave";
@@ -112,20 +155,6 @@ body {
   /* margin-left: 40px; */
 }
 
-.comming-soon-inside {
-  color: #000;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f5f5f5;
-  /* font-family: "comming-soon"; */
-  font-family: "grave";
-  font-size: 35px;
-  margin-top: 10rem;
-}
-
 .social-div {
   width: 100%;
   position: absolute;
@@ -137,6 +166,7 @@ body {
   gap: 25px;
   z-index: 1100;
   opacity: 0;
+  margin-top: -30px;
 }
 
 .icons {
@@ -197,11 +227,6 @@ body {
   position: absolute;
   inset: 70px;
   background-color: rgba(91, 44, 161, 0.275);
-  /* box-shadow: -8px -8px 25px rgba(255, 255, 255, 1),
-    8px 8px 25px rgba(0, 0, 0, 0.15), inset 3px 3px 10px rgba(0, 0, 0, 0.1),
-    inset -1px -1px 15px rgba(255, 255, 255, 1); */
-  /* border: 2px solid #eaeef0; */
-  /* border: 2px solid linear-gradient(#7766ce, #312b4d, #9b4fa0); */
   border-radius: 50%;
   z-index: 1;
   border-image: linear-gradient(#7766ce, #312b4d, #9b4fa0);
@@ -411,6 +436,7 @@ body {
     margin: 0 auto;
     text-align: center;
     font-size: 25px;
+    margin-top: 30px;
   }
 
   .loader-title {
@@ -424,6 +450,11 @@ body {
   }
   .image {
     height: 95vh;
+  }
+
+  .nsu-details {
+    z-index: 100;
+    margin-top: 100px;
   }
 }
 

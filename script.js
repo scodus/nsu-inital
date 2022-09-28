@@ -74,6 +74,14 @@
         "-=9"
       );
       animation.to(
+        ".nsu-details",
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "-=5"
+      );
+      animation.to(
         ".social-div",
         {
           opacity: 1,
@@ -84,8 +92,8 @@
 
       gsap
         .timeline({ repeat: -1, defaults: { duration: 2 } })
-        .to(".comming-soon", { rotation: "+=10" })
-        .to(".comming-soon", { rotation: "-=10" });
+        .to(".comming-soon-inside", { rotation: "+=10" })
+        .to(".comming-soon-inside", { rotation: "-=10" });
     })();
 
     tsParticles.load(".particle-div", {
