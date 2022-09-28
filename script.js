@@ -6,10 +6,10 @@
     (() => {
       let animation = gsap.timeline();
 
-      // animation.to(".curtain-text-text", {
-      //   top: "25%",
-      //   // duration: 0.5,
-      // });
+      animation.to(".curtain-text-text", {
+        top: "25%",
+        // duration: 0.5,
+      });
 
       animation.to(".item3", {
         opacity: 1,

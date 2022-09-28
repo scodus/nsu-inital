@@ -112,30 +112,30 @@ body {
   /* font-family: "comming-soon"; */
   font-family: "grave";
   font-size: 35px;
-  margin-top: 50px;
+  margin-top: -50px;
 }
 
 .nsu-details {
   width: 450px;
-  height: 150px;
+
   /* background-color: #efeede; */
   z-index: 100;
-  margin-top: 250px;
-  padding: 20px;
-  color: #fff;
-  opacity: 0;
+  /* margin-top: -10px; */
+
+  color: rgb(208, 208, 207);
+  /* opacity: 0; */
 }
 
 .venue-div {
   font-family: "Work Sans", sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .venue-div-lower {
   font-family: "Work Sans", sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   margin: 5px 0;
 }
 
@@ -158,15 +158,21 @@ body {
 .social-div {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 35px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 25px;
   z-index: 1100;
   opacity: 0;
-  margin-top: -30px;
+  margin-top: -50px;
+}
+
+.social-div-inside > * {
+  margin: 0 10px;
+  margin-top: -20px;
 }
 
 .icons {
@@ -436,7 +442,7 @@ body {
     margin: 0 auto;
     text-align: center;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: -50px;
   }
 
   .loader-title {
@@ -454,7 +460,7 @@ body {
 
   .nsu-details {
     z-index: 100;
-    margin-top: 100px;
+    margin-top: -70px;
   }
 }
 
